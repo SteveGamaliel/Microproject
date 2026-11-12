@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fff9ef" />
+  <title>GoodNeighbor — small help, big difference</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="GoodNeighbor home"><span class="brand-mark">g<span>♥</span></span><span>goodneighbor<span class="brand-dot">.</span></span></a>
+    <nav class="nav-links" aria-label="Main navigation"><a href="#community">Community board</a></nav>
+    <a class="nav-cta" href="#ask">Ask for help <span>↗</span></a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> YOUR LITTLE CORNER OF COMMUNITY</div>
+        <h1>A little help<br>goes a <em>long way.</em></h1>
+        <p class="hero-lede">Good things happen when neighbors show up for each other. Find a hand when you need one, or lend yours when you can.</p>
+        <div class="hero-actions"><a href="#community" class="button button-primary">Explore the board <span>→</span></a></div>
+        <div class="social-proof"><div class="avatar-stack"><span>😊</span><span>👩🏽</span><span>🧔🏻</span><span>👩🏻‍🦱</span></div><p><strong>2,400+</strong> kind neighbors<br><small>making everyday easier</small></p></div>
+      </div>
+      <figure class="hero-art">
+        <img src="community-neighbors.jpg" alt="A group of friends sitting together by the water, arms around one another" />
+        <figcaption>Good neighbors make life feel a little lighter.</figcaption>
+      </figure>
+      <div class="hero-wave"></div>
+    </section>
+
+    <section class="board-section" id="community">
+      <div class="board-top"><div><span class="eyebrow">GOOD THINGS ARE HAPPENING</span><h2>On the community <em>board.</em></h2><p class="muted">Real little ways to make someone’s day.</p></div><a class="button button-light" href="#ask">Post a request <span>＋</span></a></div>
+      <div class="board-controls"><div class="filters" role="group" aria-label="Filter requests"><button class="filter active" data-filter="all">Everything <span>6</span></button><button class="filter" data-filter="rides">Getting around</button><button class="filter" data-filter="home">Around the home</button><button class="filter" data-filter="company">Good company</button></div><label class="search-wrap"><span>⌕</span><input id="searchInput" type="search" placeholder="Search the board..." aria-label="Search the board"></label></div>
+      <div class="cards-grid" id="cardsGrid">
+        <article class="request-card" data-category="rides" data-search="ride lift groceries shops transport"><div class="card-top"><span class="tag tag-peach">🚲 GETTING AROUND</span><span class="time">2 hrs ago</span></div><div class="person-line"><span class="mini-avatar pink">J</span><div><strong>Jo M.</strong><small>About 1 mile away</small></div><span class="verified" title="Community member">✓</span></div><h3>A lift to the weekly market?</h3><p>I’m happy to chip in for petrol! Just need a little help with bags on the way back. 🌻</p><div class="card-bottom"><span>🕒 Saturday morning</span><button class="offer-button" data-name="Jo">Offer help <span>→</span></button></div></article>
+        <article class="request-card" data-category="home" data-search="plants watering garden home flowers"><div class="card-top"><span class="tag tag-mint">🏡 AROUND THE HOME</span><span class="time">5 hrs ago</span></div><div class="person-line"><span class="mini-avatar blue">R</span><div><strong>Ravi K.</strong><small>About 2 miles away</small></div><span class="verified" title="Community member">✓</span></div><h3>Can you water my plants?</h3><p>I’m away for a few days and my balcony jungle needs a kind soul to keep it happy! 🌿</p><div class="card-bottom"><span>🕒 Any day this week</span><button class="offer-button" data-name="Ravi">Offer help <span>→</span></button></div></article>
+        <article class="request-card" data-category="company" data-search="coffee chat company walk lonely friends"><div class="card-top"><span class="tag tag-lilac">💛 GOOD COMPANY</span><span class="time">Yesterday</span></div><div class="person-line"><span class="mini-avatar yellow">M</span><div><strong>Mary A.</strong><small>About half a mile away</small></div><span class="verified" title="Community member">✓</span></div><h3>Anyone fancy a coffee & chat?</h3><p>New to the neighborhood and hoping to meet a friendly face. My treat! ☕</p><div class="card-bottom"><span>🕒 Pretty flexible</span><button class="offer-button" data-name="Mary">Offer help <span>→</span></button></div></article>
+        <article class="request-card" data-category="home" data-search="shelf toolbox repair fix home diy"><div class="card-top"><span class="tag tag-mint">🏡 AROUND THE HOME</span><span class="time">Yesterday</span></div><div class="person-line"><span class="mini-avatar lavender">A</span><div><strong>Alex P.</strong><small>About 3 miles away</small></div><span class="verified" title="Community member">✓</span></div><h3>Borrow a toolbox for an hour?</h3><p>Putting up a little shelf and missing one of those drill-y things. I’ll return it same day! 🔧</p><div class="card-bottom"><span>🕒 Whenever works</span><button class="offer-button" data-name="Alex">Offer help <span>→</span></button></div></article>
+        <article class="request-card" data-category="rides" data-search="walk dog dogwalking pet park"><div class="card-top"><span class="tag tag-peach">🚲 GETTING AROUND</span><span class="time">2 days ago</span></div><div class="person-line"><span class="mini-avatar green">S</span><div><strong>Sam T.</strong><small>About 1 mile away</small></div><span class="verified" title="Community member">✓</span></div><h3>Could someone walk Poppy?</h3><p>My ankle’s healing up, so Poppy (a very sweet spaniel) would love a little extra park time! 🐶</p><div class="card-bottom"><span>🕒 Afternoons are best</span><button class="offer-button" data-name="Sam">Offer help <span>→</span></button></div></article>
+        <article class="request-card" data-category="company" data-search="bake cooking recipe learn bread kitchen"><div class="card-top"><span class="tag tag-lilac">💛 GOOD COMPANY</span><span class="time">3 days ago</span></div><div class="person-line"><span class="mini-avatar peach">N</span><div><strong>Nina L.</strong><small>About 2 miles away</small></div><span class="verified" title="Community member">✓</span></div><h3>Want to learn how to bake bread?</h3><p>Making a big batch this Sunday and I’d love a kitchen buddy. Aprons and snacks included! 🍞</p><div class="card-bottom"><span>🕒 Sunday afternoon</span><button class="offer-button" data-name="Nina">Offer help <span>→</span></button></div></article>
+      </div>
+      <p class="empty-state" id="emptyState">No requests found. Try another search or category. 🌼</p>
+      <div class="board-footer"><span>Showing <strong id="resultCount">6</strong> kind requests near you</span><span class="board-heart">made with ♥, close to home</span></div>
+    </section>
+
+    <section class="join-section" id="ask"><div class="join-copy"><span class="eyebrow">YOUR NEXT CHAPTER STARTS HERE</span><h2>Need a hand? Or want to <em>lend one?</em></h2><p>There’s room for you here. Tell us a little about what you need, or what you’d love to share.</p><button class="button button-primary" id="openForm">Get started <span>→</span></button><small>No pressure. No judgment. Just neighbors.</small></div></section>
+  </main>
+  <footer class="footer"><a class="brand" href="#home"><span class="brand-mark">g<span>♥</span></span><span>goodneighbor<span class="brand-dot">.</span></span></a><p>Little acts. Closer neighborhoods.</p><div class="footer-links"><a href="#community">Community board</a></div><small>Made for neighbors, with a little heart. © 2025 GoodNeighbor</small></footer>
+
+  <div class="modal-backdrop" id="formModal" aria-hidden="true"><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" aria-label="Close form">×</button><div class="modal-icon">🌼</div><span class="eyebrow">A GOOD PLACE TO START</span><h2 id="modalTitle">What brings you here?</h2><p>It can be a big thing, a small thing, or somewhere in between.</p><form id="helpForm"><label>Your name<input name="name" required placeholder="What should we call you?"></label><label>Your email<input name="email" type="email" required placeholder="you@example.com"></label><label>I’d like to...<select name="kind" required><option value="">Choose one</option><option>Ask for a little help</option><option>Offer my time or skills</option><option>Just say hello</option></select></label><label>A few details<textarea name="details" rows="3" required placeholder="Share as much or as little as you like"></textarea></label><button class="button button-primary form-submit" type="submit">Send a little hello <span>→</span></button><small class="privacy-note">Your details stay private. We’ll only use them to help you connect.</small></form></section></div>
+  <div class="toast" id="toast" role="status">💛 <span>You're all set! We'll be in touch soon.</span></div>
+  <script src="script.js"></script>
+</body>
+</html>
